@@ -15,7 +15,7 @@ export const authRoutes = [
         Component: Users
     },
     {
-        path: "/dialogs",
+        path: "/chat",
         Component: Chat
     },
     {

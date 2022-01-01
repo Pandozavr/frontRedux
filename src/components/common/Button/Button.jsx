@@ -6,7 +6,7 @@ export const Button = (props) => {
     const btnClasses = ["btn", props.type];
 
     return (
-        <button className={btnClasses.join(" ")}>
+        <button onClick={props.click} className={btnClasses.join(" ")}>
             {props.name}
         </button>
     );

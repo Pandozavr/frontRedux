@@ -1,0 +1,10 @@
+.postItem{
+    display: flex;
+    width: 100%;
+    background-color: coral;
+    padding: 0 15px;
+}
+
+.postItem img {
+    width: 50px;
+}
