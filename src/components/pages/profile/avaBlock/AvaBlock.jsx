@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {getProfileThunk} from "../../../../store/reducers/profileReducer";
 import {getAvatar, getUserName} from "../../../../store/selectors/profileSelectors";
@@ -11,11 +11,13 @@ export const AvaBlock = () => {
     const userName = useSelector(getUserName);
     const avatar = useSelector(getAvatar);
     const preload = useSelector(getPreloadValue);
-    const getProfileData = () => dispatch(getProfileThunk());
+
+    useEffect(()=>{
+        dispatch(getProfileThunk())
+    },[])
 
     return (
         <div>
-            <button onClick={getProfileData}>profile</button>
             {preload
                 ? <Loader/>
                 :
