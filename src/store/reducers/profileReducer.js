@@ -92,3 +92,12 @@ export const updPostThunk = (postID, postText) => async (dispatch) => {
         dispatch(setErrorAction(e.message))
     }
 };
+export const updAvatarThunk = (file) => async (dispatch) => {
+    try{
+        let res = await profileAPI.uploadAvatar(file);
+        console.log(res)
+        dispatch(getProfileThunk())
+    } catch(e) {
+        dispatch(setErrorAction(e.message))
+    }
+};

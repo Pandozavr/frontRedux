@@ -5,6 +5,7 @@
     color: white;
     font-size: medium;
     cursor: pointer;
+    min-width: 70px;
 }
 .primary{
     background-color: #3969E3;

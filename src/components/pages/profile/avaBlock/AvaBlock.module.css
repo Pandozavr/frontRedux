@@ -1,0 +1,15 @@
+.upload{
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #3969E3;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+.upload label{
+    cursor: pointer;
+}
+.upload:hover {
+    background-color: #6cc9e3;
+}
